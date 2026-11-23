@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>حاسبة تكبير وتصغير الوصفة | أدوات مجانية بالعربي</title>
+<meta name="description" content="كبّر أو صغّر مقادير أي وصفة حسب عدد الأشخاص بلصق المكونات وكتابة عدد الحصص.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://service999477.github.io/CV-arabi/recipe.html">
+<meta property="og:type" content="website"><meta property="og:title" content="حاسبة تكبير وتصغير الوصفة"><meta property="og:description" content="كبّر أو صغّر مقادير أي وصفة حسب عدد الأشخاص بلصق المكونات وكتابة عدد الحصص."><meta property="og:url" content="https://service999477.github.io/CV-arabi/recipe.html"><meta property="og:locale" content="ar_AR">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"حاسبة تكبير وتصغير الوصفة","url":"https://service999477.github.io/CV-arabi/recipe.html","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","inLanguage":"ar","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f5f9;--card:#fff;--ink:#14171f;--mut:#5d6578;--line:#dfe3ec;--ac:#2563eb;--rs:#eef4ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1116;--card:#181c24;--ink:#eef1f7;--mut:#a3abbd;--line:#2a303c;--ac:#5b8cff;--rs:#1c2740;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1116;--card:#181c24;--ink:#eef1f7;--mut:#a3abbd;--line:#2a303c;--ac:#5b8cff;--rs:#1c2740;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Cairo",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;display:flex;justify-content:center}
+main{width:100%;max-width:560px;padding:16px 12px 40px;display:flex;flex-direction:column;gap:12px}
+h1{margin:0;font-size:24px;text-align:center;line-height:1.4}.sub{margin:0;text-align:center;color:var(--mut);font-size:14px}
+nav{display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+nav a{padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);text-decoration:none;font-size:13px}
+nav a.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.card,article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px}
+article{display:block;line-height:1.8;font-size:14px}
+.card h2{margin:0;font-size:16px}article h2{font-size:16px;margin:14px 0 4px}article h2:first-child{margin-top:0}article p{margin:0 0 6px;color:var(--mut)}
+.row{display:flex;gap:8px}.row>label{flex:1}
+label{display:flex;flex-direction:column;gap:4px;font-size:13px;color:var(--mut)}
+input{font:inherit;font-size:16px;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+.res{background:var(--rs);border-radius:12px;padding:10px 12px;font-size:16px;font-weight:700;min-height:44px;line-height:1.9}
+.res:empty{display:none}.res small{font-weight:400;color:var(--mut)}
+footer{text-align:center;color:var(--mut);font-size:12px}
+article a{color:var(--ac)}
+select,textarea{font:inherit;font-size:16px;padding:10px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
+button{font:600 15px "Cairo",system-ui,sans-serif;padding:10px 14px;border-radius:12px;border:0;background:var(--ac);color:#fff;cursor:pointer}
+.big{font-size:44px;text-align:center;font-weight:700;direction:ltr}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;direction:ltr}
+.tile{aspect-ratio:1;font-size:30px;border-radius:12px;border:1px solid var(--line);background:var(--bg);display:flex;align-items:center;justify-content:center;cursor:pointer;user-select:none}
+.tile.up{background:var(--rs)}.tile.done{opacity:.5}
+.grp h2{margin:4px 0}.grp a{display:block;padding:10px 12px;margin-top:6px;border:1px solid var(--line);border-radius:12px;color:var(--ink);text-decoration:none;background:var(--card)}.grp a small{display:block;color:var(--mut)}
+</style>
+</head>
+<body>
+<main>
+<h1>حاسبة تكبير وتصغير الوصفة</h1>
+<p class="sub">غيّر عدد الحصص وبتتعدّل المقادير</p>
+<nav><a href="tools.html">كل الأدوات</a><a href="index.html">سيرة ذاتية</a></nav>
+<div class="card"><h2>مكوّنات الوصفة</h2><label>اكتب كل مكوّن بسطر<textarea id="t" rows="6" placeholder="2 كوب طحين&#10;1/2 كوب سكر&#10;3 بيضات"></textarea></label><div class="row"><label>عدد الحصص الأصلي<input id="o" inputmode="decimal" placeholder="4"></label><label>عدد الحصص الجديد<input id="s" inputmode="decimal" placeholder="6"></label></div><div class="res" id="r"></div></div>
+<article><h2>كيف بتشتغل؟</h2><p>بنضرب كل رقم بالمكوّن بنسبة (الحصص الجديدة ÷ الحصص الأصلية). بتقدر تكتب كسور مثل 1/2 أو 1 1/2. وبالتوابل والملح، ذوّق قبل ما تزيد بنفس النسبة.</p><h2>أدوات أخرى</h2><p><a href="bmi.html">مؤشر كتلة الجسم</a> · <a href="calories.html">السعرات اليومية</a> · <a href="heartrate.html">مناطق نبض القلب</a> · <a href="pace.html">سرعة الجري</a> · <a href="water.html">شرب الماء اليومي</a> · <a href="cooking.html">تحويل مقادير الطبخ</a> · <a href="temperature.html">محول حرارة الفرن</a> · <a href="gpa.html">حاسبة المعدل GPA</a> · <a href="exam.html">العلامة المطلوبة بالنهائي</a> · <a href="words.html">عداد الكلمات والحروف</a> · <a href="pomodoro.html">مؤقت بومودورو</a> · <a href="times.html">تمرين جدول الضرب</a> · <a href="memory.html">لعبة الذاكرة</a> · <a href="sleep.html">حاسبة وقت النوم</a> · <a href="percentage.html">النسبة المئوية</a> · <a href="discount.html">الخصم</a> · <a href="age.html">حاسبة العمر</a></p><p><a href="tools.html">كل الأدوات</a> · <a href="index.html">مولّد السيرة الذاتية</a></p></article>
+<footer>أدوات مجانية بالعربي · بياناتك ما بتنرسل لأي مكان</footer>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const n=v=>String(v||'').replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/[٫,]/g,'.').replace(/[٬،\\s]/g,'');
+const g=id=>parseFloat(n($('#'+id).value));
+const f=x=>Number.isFinite(x)?(+x.toFixed(2)).toLocaleString('en-US'):'—';
+const ok=(...a)=>a.every(Number.isFinite);
+const esc=t=>t.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));const fr=x=>{const[a,b]=x.split('/');return a/b};function pv(t){t=t.replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d)).replace(/٫/g,'.');const m=t.match(/^\s*(\d+(?:\.\d+)?\s+\d+\/\d+|\d+\/\d+|\d+(?:\.\d+)?)\s*(.*)$/);if(!m)return null;const q=m[1];let v;if(q.includes(' ')){const p=q.split(/\s+/);v=+p[0]+fr(p[1])}else v=q.includes('/')?fr(q):+q;return[v,m[2]]}
+function run(){const o=g('o'),s=g('s'),L=$('#t').value.split('\n').filter(x=>x.trim());if(!ok(o,s)||o<=0||!L.length){$('#r').innerHTML='';return}const k=s/o;$('#r').innerHTML=L.map(x=>{const p=pv(x);return p?f(p[0]*k)+' '+esc(p[1]):esc(x)}).join('<br>')}
+document.addEventListener('input',run);run();
+</script>
+</body>
+</html>
